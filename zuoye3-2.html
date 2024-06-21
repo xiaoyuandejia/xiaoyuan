@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Custom Heights</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            height: 50px; /* 设置单元格的高度 */
+        }
+        tr {
+            height: 60px; /* 设置表格行的高度 */
+        }
+    </style>
+</head>
+<body>
+    <h2>Table with Custom Heights</h2>
+    <table>
+        <tr>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+            <td></td>
+            <td rowspan="2">
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+</body>
+</html>
